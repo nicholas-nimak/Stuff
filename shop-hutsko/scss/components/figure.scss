@@ -1,0 +1,54 @@
+.figure-container {
+  flex: 0 1 100%;
+  padding: 0 0.5%;
+  box-sizing: border-box;
+  @media screen {
+    @media (min-device-width: 300px) {
+      flex: 0 1 50%;
+    }
+    @media (min-device-width: 600px) {
+      flex: 0 1 33.333333333333336%;
+    }
+    @media (min-device-width: 768px) {
+      flex: 0 1 25%;
+    }
+  }
+  figure {
+    @extend %margin_n_paddin_zero;
+
+    img {
+      width: 100%;
+    }
+
+  }
+}
+.figcaption {
+  display: flex;
+  width: auto;
+  margin: 3px 0;
+  &:nth-of-type(1) {
+    align-self: stretch;
+    justify-content: space-between;
+    padding: 0 10px;
+    p {
+      font-size: 1.2em;
+    }
+  }
+  &:nth-of-type(2) {
+    flex-flow: row wrap;
+    p {
+      border-radius: 10px;
+      padding: 0 10px;
+      margin: 0 10px 5px 0;
+      &:nth-of-type(1) {
+        background-color: #FF7400;
+      }
+      &:nth-of-type(2) {
+        background-color: #94DA00;
+      }
+      &:nth-of-type(3) {
+        background-color: #FF004D;
+      }
+    }
+  }
+}

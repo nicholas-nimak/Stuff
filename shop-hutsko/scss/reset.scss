@@ -1,0 +1,21 @@
+%list_type_none {
+   list-style: none;
+   li {
+     margin: 5px;
+   }
+ }
+
+%margin_n_paddin_zero, p {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+* {
+  font-family: arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

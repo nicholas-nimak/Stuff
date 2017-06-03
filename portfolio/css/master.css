@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=BioRhyme');
+body {
+  font-family: 'BioRhyme', cursive;
+}
+a {
+  color: inherit;
+  text-decoration-color: none;
+}
+#langLinks a, #pageLinks a {
+  text-decoration: none;  
+}

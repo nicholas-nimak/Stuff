@@ -1,0 +1,51 @@
+Goods / Products
+  title
+  price, sale
+  description
+  delivery time
+  time of adding
+  id
+  photo (more than 1)
+
+User (consumer)
+  login ([username]/email)
+  password (should be confirmated)
+  first name
+  last name
+  login time
+  registration time
+  bonuse points
+  photo
+  id
+  isAdmin (manage user orders)
+
+
+Cart
+  id
+  user_id
+  creation time
+  total price (with bonuse points)
+
+CartItem
+  cart_id
+  product_id
+
+Order
+  delivery_time
+  cart_id
+  how user will use bonuse points
+  method of getting products
+
+
+/////////////////////////////////////
+
+
+Page
+  1. Catalog of products
+  2. Single product
+  3. Authorization
+  4. Order (delivery and payment method choice)
+  5. Admin interface
+
+
+  //

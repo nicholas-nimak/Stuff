@@ -1,0 +1,66 @@
+header {
+  @extend %margin_n_paddin_zero;
+  background-color: #000;
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      margin-left: 10px;
+      @extend %margin_n_paddin_zero;
+      color: #fff;
+      font-family: arial, sans-serif;
+    }
+  }
+
+  #search_n_menu_buttons {
+        .button {
+          font-size: 1em;
+          margin: 0 5px;
+        }
+      }
+
+  #searchCont {
+    display: none;
+    flex-flow: row nowrap;
+    background-color: #ccc;
+    #search {
+      @extend %margin_n_paddin_zero;
+      width: 70%;
+      padding: 0 5px;
+      font-size: 1.3em;
+      line-height: 1.5em;
+      border-bottom: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    #search_button {
+      @extend %margin_n_paddin_zero;
+      width: 30%;
+      font-size: 1.3em;
+      &:active {
+        font-size: 1.2em;
+      }
+      background-color: #ccc;
+    }
+  }
+  #menuCont {
+  display: none;
+  justify-content: center;
+  background-color: #000;
+  ul {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-around;
+    @extend %margin_n_paddin_zero;
+    @extend %list_type_none;
+    a {
+      font-size: 1.5em;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+}

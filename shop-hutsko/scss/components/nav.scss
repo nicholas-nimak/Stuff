@@ -1,0 +1,31 @@
+#nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  #sort {
+    @extend %margin_n_paddin_zero;
+    @extend %list_type_none;
+    display: flex;
+    align-items: center;
+  }
+  #basket_n_exit {
+    display: flex;
+    @extend %margin_n_paddin_zero;
+    @extend %list_type_none;
+    li {
+      height: auto;
+    }
+    #basket {
+      // background-color: white;
+      // display: inline-block;
+      // width: 20px;
+      // height: 20px;
+    }
+    #exit {
+      // background-color: white;
+      // display: inline-block;
+      // width: 20px;
+      // height: 20px;
+    }
+  }
+}
