@@ -1,0 +1,59 @@
+#top-stories {
+
+  h3 {
+    @extend %h3-aside;
+    background: url(../img/top-stories.png) no-repeat;
+  }
+
+
+}
+
+
+
+
+
+#top-stories-headers {
+
+  display: flex;
+
+
+  li {
+
+    flex: 1 1 auto;
+
+    @include top-stories-background(1, $pink);
+    @include top-stories-background(2, $orange);
+    @include top-stories-background(3, $blue);
+  }
+
+  h4 {
+
+    margin-top: 4px;
+    @extend %white-upper;
+    text-align: center;
+
+  }
+
+}
+
+
+
+
+#top-stories-content {
+  li {
+
+    img {
+      @extend %img-bord;
+    }
+
+    @extend %li-aside;
+    @include not-bord-bot(1);
+
+    h5 {
+      font-size: 15px;
+      color: $blue;
+      // padding: 4px 0;
+    }
+
+  }
+}

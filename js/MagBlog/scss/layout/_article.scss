@@ -1,0 +1,75 @@
+#posts {
+  padding-right: 9px;
+  box-sizing: border-box;
+  font-size: 15px;
+
+}
+
+
+.post {
+  margin-bottom: 45px;
+  font-size: 14px;
+  h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  time {
+    display: none;
+  }
+
+  .figure-cont {
+    background: #fafafa;
+    border: 1px solid #bfbfbf;
+
+
+    .img-alone {
+      @extend %fig;
+    }
+    .img-cont {
+      @extend %fig;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        height: 144px;
+        border: 1px solid #bfbfbf;
+        padding: 3px;
+        box-sizing: border-box;
+      }
+    }
+
+  }
+
+  figcaption {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    // background: fade-out($blue, 0.5);
+
+    font-size: 15px;
+
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+
+
+    .category {
+      margin-right: 26px;
+      margin-bottom: 0;
+    }
+
+    span {
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      margin-right: 14px;
+      background: url(../img/comments-icon.png) no-repeat center;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+#you-might-also-like {
+  h3 {
+    @extend %h3-aside;
+    margin-bottom: 8px;
+  }
+
+  li {
+    @extend %li-aside;
+    padding: 8px 0;
+    min-height: 80px;
+
+    img {
+      @extend %img-bord;
+      height: 69px;
+    }
+  }
+
+  a {
+    color: $blue;
+  }
+}

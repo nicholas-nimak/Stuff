@@ -1,0 +1,33 @@
+#archives {
+  h3 {
+    @extend %h3-aside;
+  }
+
+  ul {
+    padding: 8px 0;
+  }
+
+  li {
+    font-size: 13px;
+    list-style-image: url(../img/list-image.png);
+    margin-left: 24px;
+    padding: 12px 0 11px;
+    @include not-bord-bot(1)
+  }
+}
+
+
+
+
+#tag-cloud {
+  width: 100%;
+  h3 {
+    @extend %h3-aside;
+  }
+
+  img {
+    width: calc(100% - 18px);
+    padding: 20px 0 20px 18px;
+  }
+
+}

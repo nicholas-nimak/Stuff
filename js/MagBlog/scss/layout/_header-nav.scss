@@ -1,0 +1,122 @@
+
+@import '../helpers/placeholders';
+@import '../helpers/mixins';
+@import '../helpers/variables';
+
+
+
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  nav {
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row wrap;
+
+    width: $nav-width;
+
+    color: #fff;
+
+    h1 {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      margin-right: 100px;
+      width: 187px;
+      height: 64px;
+      font-size: 43px;
+      transition: all .3s;
+      opacity: .9s;
+      background: url(../img/logo-back-opacity.png) no-repeat;
+      &:hover {
+        opacity: 1;
+        background: url(../img/logo-back.png)  no-repeat;
+      }
+
+
+      span {
+
+      }
+    }
+
+    #search {
+      display: flex;
+      height: $h3-h;
+      margin-right: 140px;
+
+      input {
+        width: 318px;
+        @include border-box($e5, 1px, solid, border);
+        border-right: none;
+        padding: 0 10px;
+        font-size: 19px;
+
+      }
+      button {
+        width: 120px;
+        border: none;
+        @include nth-background2(2, $blue);
+        transition: all .3s;
+        @extend %white-upper;
+      }
+    }
+
+    #spans {
+      display: flex;
+      span {
+        display: inline-block;
+        width: $nav-span-width;
+        height: $h3-h;
+        @include not-marg(5px, 1);
+        @include nth-background(1, $orange, 8px);
+        @include nth-background(2, $dark-blue, -35px);
+        @include nth-background(3, $blue, -80px);
+        transition: all .3s;
+      }
+    }
+
+    ul {
+      flex-basis: 100%;
+
+      display: flex;
+
+      margin-top: 17px;
+      height: $h3-h;
+
+      @extend %white-upper;
+
+
+      a {
+        flex-grow: 1;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
+        }
+        transition: all .3s;
+        color: #fff;
+        @include nth-background2(1, $blue);
+        @include nth-background2(2, #8cc63f);
+        @include nth-background2(3, $dark-blue);
+        @include nth-background2(4, $blue);
+        @include nth-background2(5, $orange);
+        @include nth-background2(6, #ff0000);
+        @include nth-background2(7, #898989);
+        &:nth-last-child(1) {
+          flex-basis: 310px;
+          padding-left: 21px;
+          box-sizing: border-box;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}

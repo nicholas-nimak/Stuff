@@ -1,0 +1,58 @@
+
+
+
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  background-color: #ebebeb;
+  background-image: url(../img/background.png), url(../img/border-right.png);
+  background-repeat: no-repeat, repeat-y;
+  background-position:  calc(50% - 159px) -134px, calc(50% + 534px) 800px;
+}
+
+
+
+
+
+main {
+
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  // i don't know how to make real
+  // grid like boorstrap has
+
+  width: 1055px;
+
+  background: #fff;
+  border-bottom: 5px solid;
+  border-image: url(../img/border-bottom.jpg) 1;
+
+  aside {
+    flex: 0 0 326px;
+    section {
+      margin-bottom: 8px;
+    }
+  }
+
+  article {
+    flex: 0 0 661px;
+    margin-right: 10px;
+  }
+
+}
+
+
+footer {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #ebebeb;
+}

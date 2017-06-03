@@ -1,0 +1,63 @@
+@mixin not-marg($m, $n) {
+  margin-left: $m;
+  &:nth-child(#{$n}) {
+    margin-left: 0;
+  }
+};
+
+@mixin not-bord-bot($n) {
+  border-top: 1px solid #dedddd;
+  &:nth-child(#{$n}) {
+    border-top: none;
+  }
+};
+
+@mixin nth-background($num, $color, $left) {
+  &:nth-child(#{$num}) {
+    background: fade-out($color, 0.5) url('../img/icon-sprite.png') no-repeat #{$left} 6px;
+    &:hover {
+      background: $color url('../img/icon-sprite.png') no-repeat #{$left} 6px;
+    }
+  }
+};
+@mixin nth-background2($num, $color) {
+  &:nth-child(#{$num}) {
+    background: fade-out($color, 0.5);
+    &:hover {
+      background: $color;
+    }
+  }
+};
+
+@mixin nth-background3($num, $color) {
+  transition: 0.5s;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+  }
+  &:nth-of-type(#{$num}) h4 {
+    transition: 0.5s;
+    background: fade-out($color, 0.5);
+    &:hover {
+      background: $color;
+    }
+  }
+}
+
+
+
+@mixin top-stories-background($num, $color) {
+  &:nth-of-type(#{$num}) h4 {
+    transition: 0.5s;
+    background: fade-out($color, 0.5);
+    &:hover {
+      background: $color;
+    }
+  }
+}
+
+
+@mixin border-box($color, $width, $style, $box) {
+  box-sizing: #{$box}-box;
+  border: $width $style $color;
+}

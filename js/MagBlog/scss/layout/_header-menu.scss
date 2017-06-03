@@ -1,0 +1,88 @@
+menu {
+
+  display: flex;
+
+  #arrow-left {
+    @extend %arrow;
+    background-image: url(../img/blue-arrow-left.png);
+  }
+
+  #arrow-right {
+    @extend %arrow;
+    background-image: url(../img/pink-arrow-right.png);
+  }
+
+
+
+
+}
+
+
+#menu-list {
+  width: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+
+
+  h3 {
+    flex-basis: 100%;
+
+    line-height: 40px;
+    @extend %white-upper;
+    color: $blue;
+  }
+
+
+  li {
+
+    width: calc((100% - 18px) / 3);
+    // width: 327.2px;
+
+
+    @include nth-background3(1, $blue);
+    @include nth-background3(2, $orange);
+    @include nth-background3(3, $pink);
+
+
+    @include not-marg(9px, 2);
+  }
+
+}
+
+
+
+.menu-cont {
+
+
+
+  .img-cont {
+    height: 186px;
+    overflow: hidden;
+  }
+
+  h4 {
+
+    display: flex;
+    align-items: center;
+    height: $h3-h;
+    margin-top: 3px;
+
+    @extend %white-upper;
+
+    span {
+
+      width: 30px;
+      height: 100%;
+
+      background: url(../img/white-arrow-right.png) no-repeat center;
+
+    }
+  }
+
+  p {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+
+}

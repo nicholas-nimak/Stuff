@@ -1,0 +1,62 @@
+
+
+
+@import 'variables';
+%white-upper {
+  line-height: $h3-h;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+%h3-aside {
+  @extend %white-upper;
+  padding-left: 16px;
+  background: $dark-blue;
+
+}
+
+
+%arrow {
+  margin-top: 229px;
+  width: 31px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+  transition: 0.5s;
+}
+
+
+%img-bord {
+  height: 91px;
+  float: left;
+  margin-right: 12px;
+  margin-bottom: 5px;
+  padding: 4px;
+  border: 1px solid #c8c8c8;
+  border-radius: 1px;
+}
+
+%li-aside {
+  min-height: 100px;
+
+  padding: 15px 0;
+  margin-right: 10px;
+
+  font-size: 13px;
+
+  p, h5 {
+    margin-top: 4px;
+  }
+}
+
+
+%fig {
+  display: block;
+  width: 626px;
+  margin: 12px auto;
+}
