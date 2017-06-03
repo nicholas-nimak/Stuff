@@ -1,0 +1,25 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+  font-family: 'Open Sans', serif;
+  font-size: 100%;
+}
+
+
+#plusOne, #input {
+  font-size: 1.5em;
+}
+
+#alert {
+  display: none;
+  color: red;
+  font-size: 1.2em;
+}
+
+#output {
+  font-size: 2em;
+  color: #394e96;
+}

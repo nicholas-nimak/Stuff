@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.js"
+      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+      crossorigin="anonymous">
+    </script>
+    <script src="js/main.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <!-- Home Link -->
+    <a href="/">HOME</a>
+
+    <!-- Users -->
+    <% if(users){ %>
+    <a href="#" class="deleteAllUsers">Delete all</a>
+    <ul>
+      <% users.forEach(function(user) { %>
+        <li><%= user.first_name %> <%= user.last_name %> <a href="#" class="deleteUser" data-id="<%= user._id %>">Delete</a></li>
+      <% }) %>
+    </ul>
+    <% } %>
+
+  </body>
+</html>

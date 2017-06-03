@@ -1,0 +1,33 @@
+body {
+  font-family: 'Nunito Sans', Helvetica, sans-serif;
+  font-size: 1.3em;
+}
+input {
+  width: 98%;
+  padding: 2px 1%;
+  font-size: 2em;
+  border: none;
+  border-bottom: #b2b3ba solid 3px;
+}
+input:focus {
+  outline: none;
+  border-bottom: #ce1a1a solid 3px;
+}
+button {
+  font-size: 1.2em;
+  margin: 0 15px;
+  padding: 0 5%;
+  width: auto;
+  height: auto;
+  border: none;
+  background: #ffafaf;
+}
+button:focus {
+  outline: none;
+  background: #db5c5c;
+}
+.approxi {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}

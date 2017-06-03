@@ -1,0 +1,14 @@
+
+
+SASS starter phrase.
+
+sass --watch --sourcemap=none --no-cache scss/pages:css
+
+
+
+
+Entry to mysql.
+
+C:\wamp64\bin\mysql\mysql5.7.14\bin\mysql -u username -p
+
+C:\wamp64\bin\mysql\mysql5.7.14\bin\mysql -u nick -p
